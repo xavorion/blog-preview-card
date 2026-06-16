@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  background-color: #f4d04e;
+  font-family: "Figtree";
+  font-size: 1.5rem;
+}
+
+/* Main Container */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Container Area */
+.card-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 327px;
+  max-height: 527px;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #111111;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.card-container:hover {
+  box-shadow: 16px 16px 0 #111111;
+}
+
+.card-container:hover .card-title h2 {
+  color: #f4d04e;
+}
+
+/* Thumbnail */
+.thumbnail {
+  margin-bottom: 1em;
+}
+
+.thumbnail img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+p,
+h2 {
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.tag {
+  background-color: #f4d04e;
+  display: inline-block;
+  padding: 0.17em 0.5em;
+  border-radius: 4px;
+}
+
+.tag {
+  font-weight: 950;
+}
+
+.date-tag {
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.tag,
+.date-tag {
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.card-title h2 {
+  font-size: clamp(1.25rem, 2vw, 1.4rem);
+  color: #111111;
+  font-weight: 950;
+  transition: color 0.15s ease-in-out;
+}
+
+.card-desc {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 500;
+  color: #6b6b6b;
+}
+
+/* Card User Container */
+
+.card-user {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card-profile img {
+  width: 100%;
+  max-width: 32px;
+  margin-right: 0.5em;
+}
+
+.card-username p {
+  font-size: 0.875rem;
+  color: #111111;
+  font-weight: 950;
+}
+
+/* Footer */
+footer {
+  position: static;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
