@@ -5,9 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* CSS VARIABLES */
+:root {
+  --yellow: #f4d04e;
+  --black: #111111;
+  --radius: 1.25rem;
+}
 /* Body */
 body {
-  background-color: #f4d04e;
+  background-color: var(--yellow);
   font-family: "Figtree";
   font-size: 1.5rem;
 }
@@ -24,20 +30,20 @@ body {
   background-color: #fff;
   width: 90%;
   max-width: 327px;
-  max-height: 527px;
+  /* max-height: 527px; */
   margin: 0 auto;
   padding: 1em;
-  border-radius: 20px;
-  box-shadow: 8px 8px 0 #111111;
+  border-radius: var(--radius);
+  box-shadow: 0.5rem 0.5rem 0 var(--black);
   transition: box-shadow 0.15s ease-in-out;
 }
 
 .card-container:hover {
-  box-shadow: 16px 16px 0 #111111;
+  box-shadow: 1rem 1rem 0 var(--black);
 }
 
 .card-container:hover .card-title h2 {
-  color: #f4d04e;
+  color: var(--yellow);
 }
 
 /* Thumbnail */
@@ -48,7 +54,7 @@ body {
 .thumbnail img {
   width: 100%;
   max-width: 300px;
-  border-radius: 10px;
+  border-radius: 0.416em;
 }
 
 p,
@@ -58,10 +64,10 @@ h2 {
 }
 
 .tag {
-  background-color: #f4d04e;
+  background-color: var(--yellow);
   display: inline-block;
   padding: 0.17em 0.5em;
-  border-radius: 4px;
+  border-radius: 0.1667em;
 }
 
 .tag {
@@ -80,7 +86,7 @@ h2 {
 
 .card-title h2 {
   font-size: clamp(1.25rem, 2vw, 1.4rem);
-  color: #111111;
+  color: var(--black);
   font-weight: 950;
   transition: color 0.15s ease-in-out;
 }
@@ -114,7 +120,7 @@ h2 {
 
 .card-username p {
   font-size: 0.875rem;
-  color: #111111;
+  color: var(--black);
   font-weight: 950;
 }
 
