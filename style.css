@@ -36,6 +36,7 @@ body {
   border-radius: var(--radius);
   box-shadow: 0.5rem 0.5rem 0 var(--black);
   transition: box-shadow 0.15s ease-in-out;
+  border: 1px solid var(--black);
 }
 
 .card-container:hover {
